@@ -19,7 +19,7 @@ const consoleFormat = combine(
 const fileFormat = combine(
     label({ label: 'DEV' }),
     timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-    myFormat,
+    format.json(),
 );
 
 const logger = createLogger({
