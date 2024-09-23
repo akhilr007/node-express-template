@@ -4,7 +4,7 @@
     "description": "A user management service",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon src/server.ts",
+        "dev": "cross-env NODE_ENV=dev nodemon src/server.ts",
         "format:check": "prettier . --check",
         "format:fix": "prettier . --write",
         "lint": "eslint .",
@@ -22,6 +22,7 @@
         "@types/jest": "^29.5.12",
         "@types/supertest": "^6.0.2",
         "@types/uuid": "^10.0.0",
+        "cross-env": "^7.0.3",
         "eslint": "^9.9.1",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-simple-import-sort": "^12.1.1",
